@@ -8,6 +8,7 @@ class PostsController < ApplicationController
 
   # GET /posts/:id
   def show
+    @post = Post.find(params[:id])
   end
 
   # GET /posts/new
