@@ -3,4 +3,6 @@ class User < ApplicationRecord
   validates :email, presence: true, uniqueness: true, format: { with: URI::MailTo::EMAIL_REGEXP } 
   validates :phone_number, presence: true
   validates :DOB, presence: true
+
+  validates :address, presence: true
 end
